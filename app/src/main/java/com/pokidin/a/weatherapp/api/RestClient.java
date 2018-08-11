@@ -30,7 +30,7 @@ public class RestClient {
         Log.d(TAG, "URL: " + retrofit);
 
         WeatherAPI weatherAPI = retrofit.create(WeatherAPI.class);
-        weatherAPI.weather(KEY, lat, lng).enqueue(new Callback<Weather>() {
+        weatherAPI.weather(KEY, lat, lng, "hourly").enqueue(new Callback<Weather>() {
             @Override
             public void onResponse(Call<Weather> call, Response<Weather> response) {
                 Log.i(TAG, "" + response);

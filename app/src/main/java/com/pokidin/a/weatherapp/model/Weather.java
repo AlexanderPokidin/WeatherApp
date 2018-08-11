@@ -17,9 +17,6 @@ public class Weather {
     @SerializedName("currently")
     @Expose
     private Currently currently;
-    @SerializedName("hourly")
-    @Expose
-    private Hourly hourly;
     @SerializedName("daily")
     @Expose
     private Daily daily;
@@ -62,14 +59,6 @@ public class Weather {
         this.currently = currently;
     }
 
-    public Hourly getHourly() {
-        return hourly;
-    }
-
-    public void setHourly(Hourly hourly) {
-        this.hourly = hourly;
-    }
-
     public Daily getDaily() {
         return daily;
     }
@@ -95,5 +84,3 @@ public class Weather {
     }
 
 }
-
-
