@@ -12,8 +12,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RestClient {
     private static final String TAG = "RestClient";
-    private static final String BASE_URL = "https://api.darksky.net/forecast/";
-    private static final String KEY = "f50c87610d3400b53637c27f335a4";
+    private static final String BASE_URL = "https://api.darksky.net/";
+    private static final String KEY = "f50c87610d3400b53637c27f335a4294";
 
     private double lat = 50.45466;
     private double lng = 30.5238;
