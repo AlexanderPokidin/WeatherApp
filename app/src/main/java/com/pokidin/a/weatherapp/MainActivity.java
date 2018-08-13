@@ -4,9 +4,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.pokidin.a.weatherapp.api.RestClient;
+import com.pokidin.a.weatherapp.controller.Forecaster;
+import com.pokidin.a.weatherapp.model.Daily;
+import com.pokidin.a.weatherapp.model.Weather;
 
 public class MainActivity extends AppCompatActivity {
 
+    Daily mDaily = new Daily();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
 
         RestClient restClient = new RestClient();
 
+        Forecaster forecaster = new Forecaster();
+        forecaster.forecaster(mDaily);
 
     }
 }
